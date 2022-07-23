@@ -14,6 +14,3 @@ def model_senha():
         usuario_senha = linha.split(";")
     senha_BD = usuario_senha[1]
     return senha_BD
-
-#print(model_usuario())
-#print(model_senha())
