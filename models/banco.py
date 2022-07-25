@@ -8,9 +8,12 @@ def model_usuario():
     return usuario_BD
 
 def model_senha():
-    arquivo = open("models\\usuarios.txt" , "r+")
+    arquivo = open("models\\usuarios.txt","r+")
     conteudo = arquivo.readlines()
     for linha in conteudo:
         usuario_senha = linha.split(";")
     senha_BD = usuario_senha[1]
     return senha_BD
+
+def model_cadastro_cliente(cliente):
+    print ("Cadastrado")
